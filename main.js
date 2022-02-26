@@ -18,8 +18,28 @@ function findNemo(array){
 
 }
 
-findNemo(large);
+//Two Different way of writing Loops
 
+//For Each Loop
+const findNemo2 = array =>{
+    array.forEach(element => {
+        if(element=='nemo'){
+            console.log('Found NEMO Caps');
+        }
+    });
+}
+
+const findNemo3 = array =>{
+    for(fish of array){
+        if(fish=='nemo'){
+            console.log('Found NEMO Baps');
+        }
+    }
+}
+
+findNemo(everyone);
+findNemo2(everyone);
+findNemo3(everyone);
 // Demonstrating O(1) Constant Time
 
 const boxes=[1,2,3,4,5];
